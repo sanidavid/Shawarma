@@ -1,0 +1,127 @@
+// H1
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Freehand&family=Goblin+One&family=Jaini&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Sancreek&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Supermercado+One&family=Telex&display=swap');
+//  LOGO
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Freehand&family=Fruktur:ital@0;1&family=Goblin+One&family=Jaini&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Sancreek&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Supermercado+One&family=Telex&display=swap');
+
+ // Variables
+  $background-color: #000;
+  $text-color: #fff;
+  $button-color: #ffc107;
+  $button-hover-color: #e0a800;
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-family: "Fruktur", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.offcanvas{
+    background-color: $background-color;
+}
+
+  .social a i{
+    color: $text-color;
+    font-size: 1.3rem;
+  }
+
+  .nav-item a{
+    font-family: monospace;
+  }
+
+  .navbar-toggler{
+    background-color: none !important;
+  }
+
+  .navbar-toggler-icon {
+    background-image: none !important; /* Removes the default icon */
+    background-color: white; /* Adds a custom red background for the hamburger lines */
+    width: 24px;
+    height: 3px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    width: 24px;
+    height: 3px;
+    background-color: white; /* Custom color for the lines */
+    position: absolute;
+    left: 0;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: -8px; /* Position of the top line */
+  }
+  
+  .navbar-toggler-icon::after {
+    top: 8px; /* Position of the bottom line */
+  }
+
+  .btn-close {
+    color: white !important;
+    filter: brightness(2) invert(1); /* Makes the icon white */
+  }
+
+
+.shawarma-section {
+  background-color: $background-color;
+  height: 100vh;
+  padding: 100px 0;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $text-color;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $text-color;
+  }
+
+  .btn-warning {
+    background-color: $button-color;
+    border: none;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+
+  .btn-outline-light {
+    color: $text-color;
+    border-color: $text-color;
+
+    &:hover {
+      background-color: $text-color;
+      color: $background-color;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+@media (max-width: 480px){
+    .shawarma-section{
+        padding-top: 255px;
+    }
+}
